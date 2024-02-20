@@ -5,7 +5,7 @@ public class invertedTriangle {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         //Getting value from user
-        System.out.print("Enter the base of the triangle: ");
+        System.out.print("Enter the number of digits: ");
         int n = input.nextInt();
 
         // Triangle Drawing
