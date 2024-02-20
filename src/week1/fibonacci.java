@@ -4,13 +4,14 @@ import java.util.Scanner;
 
 public class fibonacci {
     public static void main(String[] args) {
+        // Declare variables
         int a=0,b=1,c;
         Scanner input=new Scanner(System.in);
         System.out.print("How many numbers will you enter? ");
         int x=input.nextInt();
         System.out.print(a+" "+b);
 
-        for (int i=2; i<x; i++){
+        for (int i=2; i<x; i++){ // Calculate Fibonacci Numbers
             c=a+b;
             System.out.print(" "+c);
             a=b;
