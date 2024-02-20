@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CircleSegmentArea {
     public static void main(String[] args) {
-        double pi= 3.14;
+        final double pi= 3.14;
 
         Scanner input= new Scanner(System.in);
         System.out.println("Enter radius");
