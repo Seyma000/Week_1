@@ -31,18 +31,14 @@ public class flightTicketPrice {
                 price=price-discount;
             }
 
-
             if (tripType==2) {
                 tipDiscount= price*0.2;
                 price= (price-tipDiscount)*2 ;
             }
-
         }
-
         else {
             System.out.println("You Entered Incorrect Data!");
         }
-
         System.out.println("Total Amount is "+price+"TL");
     }
 }
