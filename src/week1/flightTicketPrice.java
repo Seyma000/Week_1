@@ -3,9 +3,11 @@ package week1;
 import  java.util.Scanner;
 public class flightTicketPrice {
     public static void main(String[] args) {
+        // Define Variables
         int age, distance, tripType;
         double price=0;
 
+        // Get values from user
         Scanner input= new Scanner(System.in);
         System.out.print("Enter the distance: (in km)");
         distance= input.nextInt();
@@ -18,6 +20,7 @@ public class flightTicketPrice {
             price= distance*0.10;
             double discount, tipDiscount;
 
+            // Calculate ticket price based on conditions
             if (age<12) {
                 discount= price*0.5;
                 price=price-discount;
@@ -36,9 +39,12 @@ public class flightTicketPrice {
                 price= (price-tipDiscount)*2 ;
             }
         }
+        // If a value other than the expected value is entered,
+        // print an error.
         else {
             System.out.println("You Entered Incorrect Data!");
         }
+        // Print total price.
         System.out.println("Total Amount is "+price+"TL");
     }
 }
