@@ -16,11 +16,27 @@ public class flightTicketPrice {
 
         if (distance>0 && age>0 && (tripType==1 || tripType==2)){
             price= distance*0.10;
+            double discount, tipDiscount;
 
-            if (age<12) {   price=price-(price*0.5);    }
-            else if (age>12 && age<=24) {   price=price-(price*0.1);    }
-            else if (age>=65) {   price=price-(price*0.3);    }
-            else if (tripType==2) {   price=(price-(price*0.2))*2;    }
+            if (age<12) {
+                discount= price*0.5;
+                price=price-discount;
+            }
+            else if (age>12 && age<=24) {
+                discount= price*0.1;
+                price=price-discount;
+            }
+            else if (age>=65) {
+                discount= price*0.3;
+                price=price-discount;
+            }
+
+
+            if (tripType==2) {
+                tipDiscount= price*0.2;
+                price= (price-tipDiscount)*2 ;
+            }
+
         }
 
         else {
