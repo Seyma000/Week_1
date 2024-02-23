@@ -17,6 +17,9 @@ public class recExponents {
     public static int exponentiation (int number, int power){
         if (power==0)
             return 1;
-        return exponentiation(number, power-1);
+        else {
+            return number*exponentiation(number, power-1);
+        }
+
     }
 }
