@@ -3,10 +3,8 @@ package week2;
 public class matrixTranspose {
     public static void main(String[] args) {
         int[][] array = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9},
-                {10, 11, 12}
+                {2, 3, 4},
+                {5, 6, 4}
         };
 
         System.out.println("Matrix is: ");
@@ -16,7 +14,7 @@ public class matrixTranspose {
             {
                 System.out.print(array[i][j] + " ");
             }
-            System.out.println( "");
+            System.out.println( " ");
         }
 
         System.out.println("Transpoze is: ");
