@@ -7,7 +7,7 @@ public class matrixTranspose {
                 {5, 6, 4}
         };
 
-        System.out.println("Matrix is: ");
+        System.out.println("Matrix: ");
         for (int i = 0; i <array.length; i++)
         {
             for (int j = 0; j<array[i].length;  j++)
@@ -17,7 +17,7 @@ public class matrixTranspose {
             System.out.println( " ");
         }
 
-        System.out.println("Transpoze is: ");
+        System.out.println("Transpoze: ");
         for (int i = 0; i < array[0].length; i++)
         {
             for (int j = 0; j < array.length; j++)
