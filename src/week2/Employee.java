@@ -1,6 +1,7 @@
 package week2;
 
 public class Employee {
+    // Define variables
     private String name;
     private double salary = 0;
     private int workHours, hireYear;
@@ -12,13 +13,14 @@ public class Employee {
         this.hireYear = hireYear;
     }
 
+    // tax calculation method
     public double tax() {
         if (salary < 1000) {
             return 0.0;
         }
         return salary * 0.03;
     }
-
+    // bonus calculation method
     public double bonus() {
         if (workHours > 40) {
             return (workHours - 40) * 30;
@@ -26,6 +28,7 @@ public class Employee {
         return 0.0;
     }
 
+    // salary increase method
     public double raiseSalary() {
         int year = 2021 - this.hireYear;
         if (year < 10)
